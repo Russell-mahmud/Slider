@@ -1,3 +1,14 @@
+
+const searchButton = document.getElementById("search-btn");
+const searchField = document.getElementById("search");
+
+searchField.addEventListener("keypress", function (event) {
+    // event.preventDefault();
+    if (event.key == "Enter")
+        searchButton.click();
+});
+
+
 const imagesArea = document.querySelector('.images');
 const gallery = document.querySelector('.gallery');
 const galleryHeader = document.querySelector('.gallery-header');
